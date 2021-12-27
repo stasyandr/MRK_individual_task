@@ -1,0 +1,88 @@
+{
+  "$type": "ProgramTree.BlockNode, individual_task",
+  "StList": {
+    "$type": "System.Collections.Generic.List`1[[ProgramTree.StatementNode, individual_task]], mscorlib",
+    "$values": [
+      {
+        "$type": "ProgramTree.VarDefNode, individual_task",
+        "Ids": {
+          "$type": "System.Collections.Generic.List`1[[ProgramTree.ExprNode, individual_task]], mscorlib",
+          "$values": [
+            {
+              "$type": "ProgramTree.ArrayNode, individual_task",
+              "Name": "c",
+              "Length": 4
+            },
+            {
+              "$type": "ProgramTree.ArrayNode, individual_task",
+              "Name": "b",
+              "Length": 3
+            },
+            {
+              "$type": "ProgramTree.IdNode, individual_task",
+              "Name": "d"
+            },
+            {
+              "$type": "ProgramTree.ArrayNode, individual_task",
+              "Name": "a",
+              "Length": 10
+            }
+          ]
+        }
+      },
+      {
+        "$type": "ProgramTree.WriteNode, individual_task",
+        "Expr": {
+          "$type": "ProgramTree.ArrayNode, individual_task",
+          "Name": "a",
+          "Length": 1
+        }
+      },
+      {
+        "$type": "ProgramTree.AssignNode, individual_task",
+        "Id": {
+          "$type": "ProgramTree.IdNode, individual_task",
+          "Name": "c"
+        },
+        "Expr": {
+          "$type": "ProgramTree.SliceNode, individual_task",
+          "Name": "a",
+          "Start": 7,
+          "Stop": 2147483647,
+          "Step": 1
+        },
+        "AssOp": 0
+      },
+      {
+        "$type": "ProgramTree.AssignNode, individual_task",
+        "Id": {
+          "$type": "ProgramTree.SliceNode, individual_task",
+          "Name": "c",
+          "Start": 0,
+          "Stop": 4,
+          "Step": 1
+        },
+        "Expr": {
+          "$type": "ProgramTree.BinaryNode, individual_task",
+          "isarray": false,
+          "Left": {
+            "$type": "ProgramTree.SliceNode, individual_task",
+            "Name": "a",
+            "Start": 0,
+            "Stop": 3,
+            "Step": 9
+          },
+          "Right": {
+            "$type": "ProgramTree.IdNode, individual_task",
+            "Name": "b"
+          },
+          "operation": "+"
+        },
+        "AssOp": 0
+      },
+      {
+        "$type": "ProgramTree.EmptyNode, individual_task"
+      }
+    ]
+  }
+}
